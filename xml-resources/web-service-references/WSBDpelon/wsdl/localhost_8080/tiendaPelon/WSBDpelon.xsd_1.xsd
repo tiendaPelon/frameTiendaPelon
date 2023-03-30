@@ -4,6 +4,14 @@
 
 <xs:element name="helloResponse" type="tns:helloResponse"/>
 
+<xs:element name="infoVentaDia" type="tns:infoVentaDia"/>
+
+<xs:element name="infoVentaDiaResponse" type="tns:infoVentaDiaResponse"/>
+
+<xs:element name="totalDia" type="tns:totalDia"/>
+
+<xs:element name="totalDiaResponse" type="tns:totalDiaResponse"/>
+
 <xs:complexType name="hello">
 <xs:sequence>
 <xs:element name="name" type="xs:string" minOccurs="0"/>
@@ -13,6 +21,30 @@
 <xs:complexType name="helloResponse">
 <xs:sequence>
 <xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="infoVentaDia">
+<xs:sequence>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="infoVentaDiaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="totalDia">
+<xs:sequence>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="totalDiaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:float"/>
 </xs:sequence>
 </xs:complexType>
 </xs:schema>

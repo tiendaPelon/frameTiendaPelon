@@ -10,15 +10,53 @@
 <message name="helloResponse">
 <part name="parameters" element="tns:helloResponse"/>
 </message>
+<message name="infoVentaDia">
+<part name="parameters" element="tns:infoVentaDia"/>
+</message>
+<message name="infoVentaDiaResponse">
+<part name="parameters" element="tns:infoVentaDiaResponse"/>
+</message>
+<message name="totalDia">
+<part name="parameters" element="tns:totalDia"/>
+</message>
+<message name="totalDiaResponse">
+<part name="parameters" element="tns:totalDiaResponse"/>
+</message>
 <portType name="WSBDpelon">
 <operation name="hello">
 <input wsam:Action="http://pkgWS/WSBDpelon/helloRequest" message="tns:hello"/>
 <output wsam:Action="http://pkgWS/WSBDpelon/helloResponse" message="tns:helloResponse"/>
 </operation>
+<operation name="infoVentaDia">
+<input wsam:Action="http://pkgWS/WSBDpelon/infoVentaDiaRequest" message="tns:infoVentaDia"/>
+<output wsam:Action="http://pkgWS/WSBDpelon/infoVentaDiaResponse" message="tns:infoVentaDiaResponse"/>
+</operation>
+<operation name="totalDia">
+<input wsam:Action="http://pkgWS/WSBDpelon/totalDiaRequest" message="tns:totalDia"/>
+<output wsam:Action="http://pkgWS/WSBDpelon/totalDiaResponse" message="tns:totalDiaResponse"/>
+</operation>
 </portType>
 <binding name="WSBDpelonPortBinding" type="tns:WSBDpelon">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
 <operation name="hello">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="infoVentaDia">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="totalDia">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
