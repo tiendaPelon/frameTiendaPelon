@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package pelonstore;
-
+import controlador.controlador;
+import modelo.modelo;
+import vista.frmVenta;
 /**
  *
  * @author danie
@@ -15,7 +17,11 @@ public class PelonStore {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       frmVenta objV = new frmVenta();
+        modelo objM = new modelo();
+        objV.setVisible(true);
+        controlador objC= new controlador(objV,objM);
+        
     }
     
 }

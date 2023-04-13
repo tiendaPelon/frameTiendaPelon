@@ -18,8 +18,8 @@
     </target>
     <target name="wsimport-client-WSBDpelon" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/WSBDpelon"/>
-        <property name="wsdl-WSBDpelon" location="xml-resources/web-service-references/WSBDpelon/wsdl/localhost_8080/tiendaPelon/WSBDpelon.wsdl"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSBDpelon" destdir="${build.generated.dir}/jax-wsCache/WSBDpelon" wsdl="${wsdl-WSBDpelon}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/tiendaPelon/WSBDpelon?WSDL" xnocompile="true" xendorsed="true">
+        <property name="wsdl-WSBDpelon" location="xml-resources/web-service-references/WSBDpelon/wsdl/localhost_8080/webServicesPelon/WSBDpelon.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSBDpelon" destdir="${build.generated.dir}/jax-wsCache/WSBDpelon" wsdl="${wsdl-WSBDpelon}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/webServicesPelon/WSBDpelon?WSDL" xnocompile="true" xendorsed="true">
             <depends file="${wsdl-WSBDpelon}"/>
             <produces dir="${build.generated.dir}/jax-wsCache/WSBDpelon"/>
         </wsimport>

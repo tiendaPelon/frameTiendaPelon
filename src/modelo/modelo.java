@@ -15,11 +15,22 @@ import pkgws.WSBDpelon;
 public class modelo {
     private WSBDpelon_Service obj1 = new WSBDpelon_Service();
     private WSBDpelon obj=obj1.getWSBDpelonPort();
-    private String leyenda;
     private float num;
-    public float totalDia(String fecha){
-        num = obj.totalDia(fecha);
-        return num;
+//    public float totalDia(String fecha){
+//        num = obj.totalDia(fecha);
+//        return num;
+//    }
+    String leyenda;
+    
+    public String Alta (String tabla , String datos){
+  
+        leyenda=obj.alta(tabla,datos);
+        return leyenda;
     }
     
+    
+    public String editar(String tabla, String datos, String condicion){
+      leyenda=obj.editar(tabla, datos, condicion);
+      return leyenda;
+    }
 }
