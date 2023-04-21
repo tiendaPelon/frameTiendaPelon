@@ -33,4 +33,13 @@ public class modelo {
       leyenda=obj.editar(tabla, datos, condicion);
       return leyenda;
     }
+    
+    public String totalDia(String fecha){
+        leyenda=obj.totalDia(fecha);
+        return leyenda;
+    }
+    public String productos(String fecha){
+        leyenda=obj.totalProducto(fecha);
+        return leyenda;
+    }
 }
